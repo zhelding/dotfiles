@@ -54,7 +54,6 @@ yay -S feh jsoncpp jq polybar rofi dunst python-setuptools python-pywal oomox
 yay -S pulseaudio pavucontrol
 yay -S gpmdp
 
-yay -S networkmanager
 sudo systemctl enable NetworkManager
 
 # hestia setup
