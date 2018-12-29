@@ -13,7 +13,7 @@ git config --global user.email "zoe.helding@gmail.com"
 git config --global user.name "Zoe Helding"
 
 ln -s dotfiles/vimrc .vimrc
-yay -S gvim vundle flake8
+yay -S vim vundle flake8
 
 yay -S ttf-dejavu nerd-fonts-dejavu-complete
 
@@ -28,7 +28,7 @@ yay -S pyenv python-pipenv
 # Base i3-gaps setup
 
 sudo rm /etc/lightdm
-yay -S xorg-server i3-gaps lightdm lightdm-gtk-greeter termite dmenu i3status
+yay -S xorg-server i3-gaps lightdm lightdm-gtk-greeter termite dmenu i3status gvim
 echo -e '[Desktop]\nSession=i3' >> ~/.dmrc
 
 sudo groupadd -r autologin
