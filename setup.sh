@@ -27,13 +27,12 @@ yay -S pyenv python-pipenv
 
 # Base i3-gaps setup
 
-yay -S xorg-server
-yay -S i3-gaps lightdm termite dmenu i3status
-echo '[Desktop]\nSession=i3' >> ~/.dmrc
+sudo rm /etc/lightdm
+yay -S xorg-server i3-gaps lightdm lightdm-gtk-greeter termite dmenu i3status
+echo -e '[Desktop]\nSession=i3' >> ~/.dmrc
 
 sudo groupadd -r autologin
 sudo gpasswd -a zhelding autologin
-sudo rm /etc/lightdm
 sudo sed -i 's/#autologin-user=/autologin-user=zhelding/g' /etc/lightdm/lightdm.conf
 sudo systemctl enable lightdm
 
