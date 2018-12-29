@@ -1,0 +1,7 @@
+#!/bin/bash
+
+FILE_PATH="${HOME}/.config/Google Play Music Desktop Player/json_store/playback.json"
+SONG="$(cat "${FILE_PATH}" | jq -r '.song.title')"
+ARTIST="$(cat "${FILE_PATH}" | jq -r '.song.artist')"
+
+echo $SONG' – '$ARTIST

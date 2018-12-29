@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# Get current termite opacity
+CURRENT="$(grep rgba $HOME/.config/termite/config | sed 's/.* //' | sed 's/)//')"
+
+if [ "$CURRENT" == "1" ]; then
+    NEW="0.8"
+else
+    NEW="1"
+fi
+
+# Set new transparency
+sed -i "s/rgba.*/rgba(63,\ 63,\ 63,\ $NEW)/" $HOME/.config/termite/config
+
+# Refresh existing termite sessions
+killall -USR1 termite

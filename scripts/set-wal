@@ -1,0 +1,28 @@
+#!/bin/bash
+
+if [ -z $1 ]; then
+    echo 'Error: no background option provided'
+    exit 1
+fi
+
+if [ $1 == "center" ]; then
+    feh --bg-center "$2"
+elif [ $1 == "fill" ]; then
+    feh --bg-fill "$2"
+elif [ $1 == "max" ]; then
+    feh --bg-max "$2"
+elif [ $1 == "scale" ]; then
+    feh --bg-scale "$2"
+elif [ $1 == "tile" ]; then
+    feh --bg-tile "$2"
+else
+    echo 'Error:' $1 'is not a valid feh background option'
+    exit 1
+fi
+
+if [ "$2" == "" ]; then
+    echo 'Error: A background image was not specified'
+    exit 1
+fi
+
+wal -g -n -i $2
