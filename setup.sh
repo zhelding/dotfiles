@@ -40,6 +40,7 @@ sudo systemctl enable lightdm
 
 ln -s ~/dotfiles/dunst ~/.config/dunst
 ln -s ~/dotfiles/gtk-3.0 ~/.config/gtk-3.0
+rm -rf ~/.config/i3
 ln -s ~/dotfiles/i3 ~/.config/i3
 ln -s ~/dotfiles/polybar ~/.config/polybar
 ln -s ~/dotfiles/ranger ~/.config/ranger
