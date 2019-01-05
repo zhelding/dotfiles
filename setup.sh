@@ -51,7 +51,7 @@ yay -S xorg-xrdb
 yay -S firefox
 yay -S compton
 yay -S arandr
-yay -S feh jsoncpp jq polybar rofi dunst python-setuptools python-pywal oomox
+yay -S feh jsoncpp jq polybar rofi dunst pacman-contrib python-setuptools python-pywal oomox
 yay -S pulseaudio pavucontrol
 yay -S gpmdp
 
