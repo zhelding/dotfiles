@@ -48,10 +48,10 @@ ln -s ~/dotfiles/rofi ~/.config/rofi
 ln -s ~/dotfiles/termite ~/.config/termite
 
 yay -S xorg-xrdb
-yay -S firefox
+yay -S chromium
 yay -S compton
 yay -S arandr
-yay -S feh jsoncpp jq polybar rofi dunst pacman-contrib python-setuptools python-pywal oomox
+yay -S arc-gtk-theme feh jsoncpp jq polybar rofi dunst pacman-contrib python-setuptools python-pywal
 yay -S pulseaudio pavucontrol
 yay -S gpmdp
 
