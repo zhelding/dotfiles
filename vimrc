@@ -32,5 +32,8 @@ Plugin 'jiangmiao/auto-pairs'
 Plugin 'scrooloose/nerdtree'
 Plugin 'w0rp/ale'
 Plugin 'vimwiki/vimwiki'
+Plugin 'dylanaraps/wal'
 
 call vundle#end()
+
+colorscheme wal
