@@ -1,4 +1,5 @@
 export EDITOR=vim
+export TERM="xterm-256color"
 
 # Move cursor with ctrl-a / ctrl-e
 bindkey -e
@@ -35,3 +36,5 @@ alias nogaps="i3-msg 'gaps inner all set 0'"
 
 alias ls="ls --color=auto"
 alias transp="toggle-transparency"
+alias deorphan='[[ -n $(yay -Qtd) ]] && yay -Rns $(yay -Qtdq) || echo "No" \
+                "orphans to remove"'
