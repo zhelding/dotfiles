@@ -1,5 +1,8 @@
 syntax on
 
+" Case-insensitive search
+set ignorecase
+
 " Line numbering
 set number relativenumber
 
