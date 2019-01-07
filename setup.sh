@@ -28,7 +28,7 @@ yay -S pyenv python-pipenv
 # Base i3-gaps setup
 
 sudo rm /etc/lightdm
-yay -S xorg-server i3-gaps lightdm lightdm-gtk-greeter termite dmenu i3status gvim
+yay -S xorg-server i3-gaps i3lock-color lightdm lightdm-gtk-greeter termite dmenu i3status gvim
 echo -e '[Desktop]\nSession=i3' >> ~/.dmrc
 
 sudo groupadd -r autologin
