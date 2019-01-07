@@ -36,6 +36,7 @@ call vundle#begin()
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'scrooloose/nerdtree'
 Plugin 'w0rp/ale'
+Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'vimwiki/vimwiki'
 Plugin 'dylanaraps/wal'
 
