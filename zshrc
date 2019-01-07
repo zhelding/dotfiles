@@ -16,6 +16,8 @@ compinit
 # Enable powerlevel9k theme
 source /usr/share/zsh-theme-powerlevel9k/powerlevel9k.zsh-theme
 
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs time)
+
 # Import colorscheme from pywal
 (cat ~/.cache/wal/sequences &)
 
