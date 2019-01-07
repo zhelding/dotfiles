@@ -13,7 +13,7 @@ git config --global user.email "zoe.helding@gmail.com"
 git config --global user.name "Zoe Helding"
 
 ln -s dotfiles/vimrc .vimrc
-yay -S vim vundle flake8
+yay -S vim vundle flake8 tmux
 
 ln -s dotfiles/tmux.conf .tmux.conf
 
