@@ -138,6 +138,7 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # Start up polybar
+exec killall polybar
 exec --no-startup-id polybar bar
 
 # Set up gaps
