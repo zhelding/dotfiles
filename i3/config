@@ -146,6 +146,9 @@ for_window [class="^.*"] border pixel 0
 gaps inner 10
 gaps outer 0
 
+# Authy always floats
+for_window [title="Authy"] floating enable
+
 # Load last used wallpaper and colorscheme
 set $wallpaper `cat $HOME/.cache/wal/wal`
 exec --no-startup-id set-wal scale $wallpaper
