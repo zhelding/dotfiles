@@ -5,4 +5,4 @@ scrollback_lines = 10000
 [colors]
 
 # Background with transparency
-background = rgba(63, 63, 63, 0.8)
+background = rgba(63, 63, 63, 1)

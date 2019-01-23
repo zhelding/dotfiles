@@ -14,7 +14,7 @@ set shiftwidth=4
 " File type based indentation
 filetype plugin indent on
 
-set colorcolumn=80
+set colorcolumn=81
 
 set clipboard=unnamedplus
 
