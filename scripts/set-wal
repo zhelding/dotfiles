@@ -25,4 +25,4 @@ if [ "$2" == "" ]; then
     exit 1
 fi
 
-wal -g -n -i $2
+wal -n -i $2
