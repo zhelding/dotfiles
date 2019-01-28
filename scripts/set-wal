@@ -6,15 +6,15 @@ if [ -z $1 ]; then
 fi
 
 if [ $1 == "center" ]; then
-    feh --bg-center "$2"
+    feh --bg-center "$2" "$3"
 elif [ $1 == "fill" ]; then
-    feh --bg-fill "$2"
+    feh --bg-fill "$2" "$3"
 elif [ $1 == "max" ]; then
-    feh --bg-max "$2"
+    feh --bg-max "$2" "$3"
 elif [ $1 == "scale" ]; then
-    feh --bg-scale "$2"
+    feh --bg-scale "$2" "$3"
 elif [ $1 == "tile" ]; then
-    feh --bg-tile "$2"
+    feh --bg-tile "$2" "$3"
 else
     echo 'Error:' $1 'is not a valid feh background option'
     exit 1

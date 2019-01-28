@@ -7,23 +7,42 @@ primary = ${xrdb:color1:#222}
 secondary = ${xrdb:color2:#222}
 alert = ${xrdb:color3:#222}
 
-[bar/bar]
+[bar/primary]
+
+monitor = HDMI-0
 
 background = ${colors.background}
 foreground = ${colors.foreground}
 
-height = 50
+height = 30
 
 module-margin = 1
 padding-right = 2
 
-font-0 = DejaVuSansMono Nerd Font:pixelsize=18
+font-0 = DejaVuSansMono Nerd Font:pixelsize=11
 
 modules-left = i3
 modules-center = music
-modules-right = arch-updates network pulseaudio battery date
+modules-right = arch-updates network pulseaudio date
 
 tray-position = right
+
+[bar/secondary]
+
+monitor = DP-4
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+height = 30
+
+module-margin = 1
+padding-right = 2
+
+font-0 = DejaVuSansMono Nerd Font:pixelsize=11
+
+modules-left = i3
+modules-right = date
 
 [module/i3]
 type = internal/i3
@@ -69,10 +88,10 @@ interval = 600
 
 [module/network]
 type = internal/network
-interface = wlp3s0
+interface = enp0s31f6
 
-label-connected = 直
-label-disconnected = 睊
+label-connected = 
+label-disconnected = 
 
 [module/pulseaudio]
 type = internal/pulseaudio

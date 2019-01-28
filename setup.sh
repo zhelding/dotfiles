@@ -49,6 +49,8 @@ ln -s ~/dotfiles/ranger ~/.config/ranger
 ln -s ~/dotfiles/rofi ~/.config/rofi
 ln -s ~/dotfiles/termite ~/.config/termite
 
+sudo ln -s ~/dotfiles/scripts/* /usr/local/bin/.
+
 yay -S xorg-xrdb
 yay -S chromium
 yay -S compton
@@ -61,12 +63,12 @@ sudo systemctl enable NetworkManager
 
 # hestia setup
 
-yay -S linux-headers broadccom-wl-dkms
-echo 'export GDK_DPI_SCALE=1.5' | sudo tee --append /etc/profile.d/gdkscale.sh
+# yay -S linux-headers broadccom-wl-dkms
+# echo 'export GDK_DPI_SCALE=1.5' | sudo tee --append /etc/profile.d/gdkscale.sh
 
 yay -S intel-ucode nvidia lib32-nvidia-utils
 
 yay -S steam steam-fonts
 
-yay -S light
-sudo setpci -v -H1 -s 00:01.00 BRIDGE_CONTROL=0
+# yay -S light
+# sudo setpci -v -H1 -s 00:01.00 BRIDGE_CONTROL=0
