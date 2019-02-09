@@ -1,2 +1,9 @@
 rofi.modi:  drun
-rofi.font: DejaVuSansMono Nerd Font 18
+
+# BEGIN hera
+#rofi.font: DejaVuSansMono Nerd Font 11
+# END hera
+
+# BEGIN hestia
+#rofi.font: DejaVuSansMono Nerd Font 18
+# END hestia

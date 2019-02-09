@@ -2,6 +2,7 @@
 
 # Base system setup
 
+cd ~
 sudo pacman -S git
 git clone https://aur.archlinux.org/yay.git
 cd yay
@@ -48,6 +49,8 @@ ln -s ~/dotfiles/polybar ~/.config/polybar
 ln -s ~/dotfiles/ranger ~/.config/ranger
 ln -s ~/dotfiles/rofi ~/.config/rofi
 ln -s ~/dotfiles/termite ~/.config/termite
+
+sudo ln -s ~/dotfiles/scripts/* /usr/local/bin/.
 
 yay -S xorg-xrdb
 yay -S chromium
