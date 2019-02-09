@@ -1,5 +1,13 @@
 [options]
-font = DejaVuSansMono Nerd Font 11
+
+# BEGIN hera
+#font = DejaVuSansMono Nerd Font 11
+# END hera
+
+# BEGIN hestia
+#font = DejaVuSansMono Nerd Font 12
+# END hestia
+
 scrollback_lines = 10000
 
 [colors]
