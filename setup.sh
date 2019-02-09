@@ -57,17 +57,20 @@ yay -S arc-gtk-theme feh jsoncpp jq polybar rofi dunst pacman-contrib python-set
 yay -S pulseaudio pavucontrol
 yay -S gpmdp
 yay -S ruby
+yay -S mir.qualia
 
 sudo systemctl enable NetworkManager
 
-# hestia setup
-
-yay -S linux-headers broadccom-wl-dkms
-echo 'export GDK_DPI_SCALE=1.5' | sudo tee --append /etc/profile.d/gdkscale.sh
-
-yay -S intel-ucode nvidia lib32-nvidia-utils
-
-yay -S steam steam-fonts
-
-yay -S light
-sudo setpci -v -H1 -s 00:01.00 BRIDGE_CONTROL=0
+# BEGIN hestia
+#
+#yay -S linux-headers broadccom-wl-dkms
+#echo 'export GDK_DPI_SCALE=1.5' | sudo tee --append /etc/profile.d/gdkscale.sh
+#
+#yay -S intel-ucode nvidia lib32-nvidia-utils
+#
+#yay -S steam steam-fonts
+#
+#yay -S light
+#sudo setpci -v -H1 -s 00:01.00 BRIDGE_CONTROL=0
+#
+# END hestia
