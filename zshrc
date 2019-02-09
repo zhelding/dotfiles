@@ -1,6 +1,8 @@
 export EDITOR=vim
 export TERM="xterm-256color"
 
+export PATH="$PATH:$(ruby -e 'print Gem.user_dir')/bin"
+
 # Move cursor with ctrl-a / ctrl-e
 bindkey -e
 

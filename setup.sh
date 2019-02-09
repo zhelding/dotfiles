@@ -56,6 +56,7 @@ yay -S arandr
 yay -S arc-gtk-theme feh jsoncpp jq polybar rofi dunst pacman-contrib python-setuptools python-pywal
 yay -S pulseaudio pavucontrol
 yay -S gpmdp
+yay -S ruby
 
 sudo systemctl enable NetworkManager
 
