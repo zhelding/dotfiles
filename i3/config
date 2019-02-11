@@ -190,6 +190,6 @@ bindsym $mod+Shift+x exec i3lock --blur 5
 #workspace 7 output DP-4
 #workspace 8 output DP-4
 #workspace 9 output DP-4
-#workspace 10 output DP-4
+#workspace X output DP-4
 #
 # END hera
