@@ -70,10 +70,10 @@ label-focused-padding = 2
 label-unfocused = %name%
 label-unfocused-padding = 2
 
-label-visible = %index%
+label-visible = %name%
 label-visible-padding = 2
 
-label-urgent = %index%
+label-urgent = %name%
 label-urgent-foreground = ${colors.foreground}
 label-urgent-background = ${colors.alert}
 label-urgent-padding = 2
@@ -111,7 +111,6 @@ type = internal/network
 #label-connected = 直
 #label-disconnected = 睊
 # END hestia
-
 
 [module/pulseaudio]
 type = internal/pulseaudio
