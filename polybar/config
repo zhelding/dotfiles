@@ -34,7 +34,7 @@ padding-right = 2
 
 modules-left = i3
 modules-center = music
-modules-right = arch-updates network pulseaudio date
+modules-right = arch-updates network pulseaudio battery date
 
 tray-position = right
 
@@ -107,7 +107,7 @@ type = internal/network
 # END hera
 
 # BEGIN hestia
-#interace = wlp3s0
+#interface = wlp3s0
 #label-connected = 直
 #label-disconnected = 睊
 # END hestia
