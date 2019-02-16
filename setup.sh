@@ -61,6 +61,7 @@ yay -S pulseaudio pavucontrol
 yay -S gpmdp
 yay -S ruby
 yay -S mir.qualia
+yay -S dropbox
 
 sudo systemctl enable NetworkManager
 

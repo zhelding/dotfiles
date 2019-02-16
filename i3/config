@@ -193,3 +193,5 @@ bindsym $mod+Shift+x exec i3lock --blur 5
 #workspace X output DP-4
 #
 # END hera
+
+exec --no-startup-id dropbox
