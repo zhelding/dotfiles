@@ -1,9 +1,3 @@
-dunst filter=qualia
-gtk-3.0 filter=qualia
-i3 filter=qualia
-polybar filter=qualia
-ranger filter=qualia
-rofi filter=qualia
-scripts filter=qualia
-termite filter=qualia
+* filter=qualia
 .* filter=qualia
+wallpapers filter=cat
