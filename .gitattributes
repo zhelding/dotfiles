@@ -1,3 +1,13 @@
-* filter=qualia
-.* filter=qualia
-wallpapers filter=cat
+dunst filter=qualia
+.gitattributes filter=qualia
+gtk-3.0 filter=qualia
+i3 filter=qualia
+polybar filter=qualia
+ranger filter=qualia
+rofi filter=qualia
+scripts filter=qualia
+setup.sh filter=qualia
+termite filter=qualia
+tmux.conf filter=qualia
+vimrc filter=qualia
+zshrc filter=qualia
