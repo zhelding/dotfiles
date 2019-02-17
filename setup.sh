@@ -62,6 +62,7 @@ yay -S gpmdp
 yay -S ruby
 yay -S mir.qualia
 yay -S dropbox
+yay -S noto-fonts-emoji
 
 sudo systemctl enable NetworkManager
 
