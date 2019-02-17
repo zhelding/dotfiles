@@ -29,6 +29,7 @@ set splitbelow
 set splitright
 
 let g:vimwiki_list = [{'path': '~/wiki/'}]
+nnoremap <Leader>we :Vimwiki2HTML <CR>
 
 " Plugins
 call vundle#begin()
