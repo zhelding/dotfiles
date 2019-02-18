@@ -29,9 +29,9 @@
     # The width can be negative.  In this case the actual width is the
     # screen width minus the width defined in within the geometry option.
     
-    # BEGIN hera
+    # BEGIN echidna
     #geometry = "300x5-10+40"
-    # END hera
+    # END echidna
     
     # BEGIN hestia
     #geometry = "500x5-10+40"
@@ -91,9 +91,9 @@
 
     ### Text ###
 
-    # BEGIN hera
+    # BEGIN echidna
     #font = DejaVu Sans 11
-    # END hera
+    # END echidna
     
     # BEGIN hestia
     #font = DejaVu Sans 18

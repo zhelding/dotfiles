@@ -140,9 +140,9 @@ bindsym $mod+r mode "resize"
 # Start up polybar
 exec --no-startup-id polybar primary
 
-# BEGIN hera
+# BEGIN echidna
 #exec --no-startup-id polybar secondary
-# END hera
+# END echidna
 
 # Set up gaps
 for_window [class="^.*"] border pixel 0
@@ -178,7 +178,7 @@ bindsym XF86MonBrightnessDown exec --no-startup-id light -U 10
 bindsym $mod+Shift+x exec i3lock --blur 5
 
 # Multimonitor setup
-# BEGIN hera
+# BEGIN echidna
 #exec --no-startup-id xrandr --output HDMI-0 --mode 1920x1080 --pos 0x336 --rotate normal --output DP-4 --mode 1920x1080 --pos 1920x0 --rotate left --output DP-3 --off
 #
 #workspace 1 output HDMI-0
@@ -192,6 +192,6 @@ bindsym $mod+Shift+x exec i3lock --blur 5
 #workspace 9 output DP-4
 #workspace X output DP-4
 #
-# END hera
+# END echidna
 
 exec --no-startup-id dropbox

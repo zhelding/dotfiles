@@ -1,8 +1,8 @@
 rofi.modi:  drun
 
-# BEGIN hera
+# BEGIN echidna
 #rofi.font: DejaVuSansMono Nerd Font 11
-# END hera
+# END echidna
 
 # BEGIN hestia
 #rofi.font: DejaVuSansMono Nerd Font 18
