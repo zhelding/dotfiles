@@ -155,7 +155,8 @@ for_window [title="Authy"] floating enable
 
 # Load last used wallpaper and colorscheme
 set $wallpaper `cat $HOME/.cache/wal/wal`
-exec --no-startup-id set-wal scale $wallpaper
+set $wallpaper-vert `cat $HOME/.cache/wal/wal-vert`
+exec --no-startup-id set-wal scale $wallpaper $wallpaper-vert
 
 # Start up compositor
 exec --no-startup-id compton -b

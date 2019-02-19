@@ -56,7 +56,7 @@ yay -S xorg-xrdb
 yay -S chromium
 yay -S compton
 yay -S arandr
-yay -S arc-gtk-theme feh jsoncpp jq polybar rofi dunst pacman-contrib python-setuptools python-pywal
+yay -S arc-gtk-theme feh jsoncpp jq polybar rofi dunst pacman-contrib python-setuptools python-pywal python-haishoku
 yay -S pulseaudio pavucontrol
 yay -S gpmdp
 yay -S ruby

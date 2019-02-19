@@ -5,24 +5,32 @@ if [ -z $1 ]; then
     exit 1
 fi
 
+if [ -z $2 ]; then
+    echo 'Error: A background image was not specified'
+    exit 1
+fi
+
+if [ $3 ]; then
+    echo `realpath $3` > /home/zhelding/.cache/wal/wal-vert
+fi
+
 if [ $1 == "center" ]; then
-    feh --bg-center "$2" "$3"
+    feh --bg-center $2 $3
 elif [ $1 == "fill" ]; then
-    feh --bg-fill "$2" "$3"
+    feh --bg-fill $2 $3
 elif [ $1 == "max" ]; then
-    feh --bg-max "$2" "$3"
+    feh --bg-max $2 $3
 elif [ $1 == "scale" ]; then
-    feh --bg-scale "$2" "$3"
+    feh --bg-scale $2 $3
 elif [ $1 == "tile" ]; then
-    feh --bg-tile "$2" "$3"
+    feh --bg-tile $2 $3
 else
     echo 'Error:' $1 'is not a valid feh background option'
     exit 1
 fi
 
-if [ "$2" == "" ]; then
-    echo 'Error: A background image was not specified'
-    exit 1
+if wal --backend haishoku -n -i $2; then
+    :
+else
+    wal -n -i $2
 fi
-
-wal -n -i $2
