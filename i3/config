@@ -144,6 +144,10 @@ exec --no-startup-id polybar primary
 #exec --no-startup-id polybar secondary
 # END echidna
 
+# BEGIN vivian
+#exec --no-startup-id polybar secondary
+# END vivian
+
 # Set up gaps
 for_window [class="^.*"] border pixel 0
 
