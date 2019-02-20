@@ -9,7 +9,7 @@
 # END hestia
 
 # BEGIN vivian
-#font = DejaVuSansMono Nerd Font 12
+#font = DejaVuSansMono Nerd Font 11
 # END vivian
 
 scrollback_lines = 10000

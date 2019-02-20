@@ -9,5 +9,5 @@ rofi.modi:  drun
 # END hestia
 
 # BEGIN vivian
-#rofi.font: DejaVuSansMono Nerd Font 18
+#rofi.font: DejaVuSansMono Nerd Font 11
 # END vivian

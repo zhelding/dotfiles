@@ -38,7 +38,7 @@
     # END hestia
     
     # BEGIN vivian
-    #geometry = "500x5-10+40"
+    #geometry = "300x5-10+40"
     # END vivian
 
     # Show how many messages are currently hidden (because of geometry).
@@ -104,7 +104,7 @@
     # END hestia
     
     # BEGIN vivian
-    #font = DejaVu Sans 18
+    #font = DejaVu Sans 11
     # END vivian
 
     # The spacing between lines.  If the height is smaller than the
