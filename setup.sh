@@ -57,7 +57,7 @@ yay -S chromium
 yay -S compton
 yay -S arandr
 yay -S arc-gtk-theme feh jsoncpp jq polybar rofi dunst pacman-contrib python-setuptools python-pywal python-haishoku
-yay -S pulseaudio pavucontrol
+yay -S pulseaudio pavucontrol playerctl
 yay -S gpmdp
 yay -S ruby
 yay -S mir.qualia
