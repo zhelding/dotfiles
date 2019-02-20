@@ -14,13 +14,14 @@ alert = ${xrdb:color3:#222}
 #height = 30
 # END echidna
 
+# BEGIN vivian
+#monitor = eDP1
+#height = 30
+# END vivian
+
 # BEGIN hestia
 #height = 50
 # END hestia
-
-# BEGIN vivian
-#height = 30
-# END vivian
 
 background = ${colors.background}
 foreground = ${colors.foreground}
@@ -48,7 +49,13 @@ tray-position = right
 
 [bar/secondary]
 
-monitor = DP-4
+# BEGIN echidna
+#monitor = DP-4
+# END echidna
+
+# BEGIN vivian
+#monitor = HDMI1
+# END vivian
 
 background = ${colors.background}
 foreground = ${colors.foreground}
@@ -123,7 +130,7 @@ type = internal/network
 # END hestia
 
 # BEGIN vivian
-#interface = wlp3s0
+#interface = wlp2s0
 #label-connected = 直
 #label-disconnected = 睊
 # END vivian
