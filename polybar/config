@@ -18,6 +18,10 @@ alert = ${xrdb:color3:#222}
 #height = 50
 # END hestia
 
+# BEGIN vivian
+#height = 50
+# END vivian
+
 background = ${colors.background}
 foreground = ${colors.foreground}
 
@@ -31,6 +35,10 @@ padding-right = 2
 # BEGIN hestia
 #font-0 = DejaVuSansMono Nerd Font:pixelsize=18
 # END hestia
+
+# BEGIN vivian
+#font-0 = DejaVuSansMono Nerd Font:pixelsize=18
+# END vivian
 
 modules-left = i3
 modules-center = music
@@ -113,6 +121,12 @@ type = internal/network
 #label-connected = 直
 #label-disconnected = 睊
 # END hestia
+
+# BEGIN vivian
+#interface = wlp3s0
+#label-connected = 直
+#label-disconnected = 睊
+# END vivian
 
 [module/pulseaudio]
 type = internal/pulseaudio

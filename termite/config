@@ -8,6 +8,10 @@
 #font = DejaVuSansMono Nerd Font 12
 # END hestia
 
+# BEGIN vivian
+#font = DejaVuSansMono Nerd Font 12
+# END vivian
+
 scrollback_lines = 10000
 
 [colors]
