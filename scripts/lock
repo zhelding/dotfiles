@@ -1,0 +1,5 @@
+#!/bin/sh
+
+notify-send 'DUNST_COMMAND_PAUSE'
+
+i3lock -n --blur 5; notify-send 'DUNST_COMMAND_RESUME'
