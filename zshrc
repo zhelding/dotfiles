@@ -42,3 +42,9 @@ alias ls="ls --color=auto"
 alias transp="toggle-transparency"
 alias deorphan='[[ -n $(yay -Qtd) ]] && yay -Rns $(yay -Qtdq) || echo "No" \
                 "orphans to remove"'
+
+# Define functions
+
+function tmux-help () {
+    cat ~/wiki/'tmux cheatsheet.wiki' | grep $1
+}
