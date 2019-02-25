@@ -14,6 +14,11 @@ alert = ${xrdb:color3:#222}
 #height = 30
 # END echidna
 
+# BEGIN vivian
+#monitor = eDP1
+#height = 30
+# END vivian
+
 # BEGIN hestia
 #height = 50
 # END hestia
@@ -32,6 +37,10 @@ padding-right = 2
 #font-0 = DejaVuSansMono Nerd Font:pixelsize=18
 # END hestia
 
+# BEGIN vivian
+#font-0 = DejaVuSansMono Nerd Font:pixelsize=11
+# END vivian
+
 modules-left = i3
 modules-center = music
 modules-right = arch-updates network pulseaudio battery date
@@ -40,7 +49,13 @@ tray-position = right
 
 [bar/secondary]
 
-monitor = DP-4
+# BEGIN echidna
+#monitor = DP-4
+# END echidna
+
+# BEGIN vivian
+#monitor = HDMI1
+# END vivian
 
 background = ${colors.background}
 foreground = ${colors.foreground}
@@ -113,6 +128,12 @@ type = internal/network
 #label-connected = 直
 #label-disconnected = 睊
 # END hestia
+
+# BEGIN vivian
+#interface = wlp2s0
+#label-connected = 直
+#label-disconnected = 睊
+# END vivian
 
 [module/pulseaudio]
 type = internal/pulseaudio

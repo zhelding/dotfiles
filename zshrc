@@ -42,6 +42,7 @@ alias ls="ls --color=auto"
 alias transp="toggle-transparency"
 alias deorphan='[[ -n $(yay -Qtd) ]] && yay -Rns $(yay -Qtdq) || echo "No" \
                 "orphans to remove"'
+alias multimon="toggle-multimonitor"
 
 # Define functions
 
