@@ -43,3 +43,4 @@ alias transp="toggle-transparency"
 alias deorphan='[[ -n $(yay -Qtd) ]] && yay -Rns $(yay -Qtdq) || echo "No" \
                 "orphans to remove"'
 alias multimon="toggle-multimonitor"
+alias startemis="aws ec2 start-instances --instance-ids i-048a83011cc3bc0d1"
