@@ -44,3 +44,8 @@ alias deorphan='[[ -n $(yay -Qtd) ]] && yay -Rns $(yay -Qtdq) || echo "No" \
                 "orphans to remove"'
 alias multimon="toggle-multimonitor"
 alias startemis="aws ec2 start-instances --instance-ids i-048a83011cc3bc0d1"
+
+# Define functions
+function tmux-help () {
+    cat ~/wiki/'tmux cheatsheet.wiki' | grep $1
+}
