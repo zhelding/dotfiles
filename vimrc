@@ -28,6 +28,9 @@ nnoremap <C-H> <C-W><C-H>
 set splitbelow
 set splitright
 
+let NERDTreeShowLineNumbers=1
+autocmd FileType nerdtree setlocal number relativenumber
+
 let g:vimwiki_list = [{'path': '~/wiki/'}]
 nnoremap <Leader>we :Vimwiki2HTML <CR>
 

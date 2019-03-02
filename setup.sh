@@ -16,7 +16,7 @@ git config --global user.name "Zoe Helding"
 ln -s dotfiles/vimrc .vimrc
 yay -S vim vundle flake8 tmux
 
-ln -s dotfiles/tmux.conf .tmux.conf
+ln -s ~/dotfiles/tmux.conf ~/.tmux.conf
 
 yay -S ttf-dejavu nerd-fonts-dejavu-complete
 
