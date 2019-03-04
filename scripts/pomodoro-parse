@@ -5,7 +5,7 @@ PREFIX=${STATUS:0:1}
 
 if [ "$PREFIX" == "P" ]; then
     echo %{T2}🍅%{T-} ${STATUS: -5}
-elif [ "${STATUS: -3}" != "min" ] && [ ! -z $STATUS ]; then
+elif [ "${STATUS: -3}" != "min" ] && [ ! -z "$STATUS" ]; then
     echo %{T2}☕%{T-} ${STATUS: -5}
 else
     echo
