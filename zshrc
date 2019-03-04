@@ -46,7 +46,7 @@ alias deorphan='[[ -n $(yay -Qtd) ]] && yay -Rns $(yay -Qtdq) || echo "No" \
 alias startemis="aws ec2 start-instances --instance-ids i-048a83011cc3bc0d1"
 
 # BEGIN vivian
-# alias multimon="toggle-multimonitor"
+#alias multimon="toggle-multimonitor"
 # END vivian
 
 # Define functions
