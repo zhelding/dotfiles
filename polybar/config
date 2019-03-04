@@ -31,19 +31,22 @@ padding-right = 2
 
 # BEGIN echidna
 #font-0 = DejaVuSansMono Nerd Font:pixelsize=11
+#font-1 = Noto Color Emoji:scale=11
 # END echidna
 
 # BEGIN hestia
 #font-0 = DejaVuSansMono Nerd Font:pixelsize=18
+#font-1 = Noto Color Emoji:scale=18
 # END hestia
 
 # BEGIN vivian
 #font-0 = DejaVuSansMono Nerd Font:pixelsize=11
+#font-1 = Noto Color Emoji:scale=11
 # END vivian
 
 modules-left = i3
 modules-center = music
-modules-right = arch-updates network pulseaudio battery date
+modules-right = pomodoro arch-updates network pulseaudio battery date
 
 tray-position = right
 
@@ -107,6 +110,12 @@ interval = 1
 format = <label>
 
 label = %output:0:99:...%
+
+[module/pomodoro]
+type = custom/script
+
+exec = pomodoro-parse
+interval = 1
 
 [module/arch-updates]
 type = custom/script
