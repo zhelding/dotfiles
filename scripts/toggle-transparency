@@ -3,7 +3,7 @@
 # Get current termite opacity
 CURRENT="$(grep rgba $HOME/.config/termite/config | sed 's/.* //' | sed 's/)//')"
 
-if [ "$CURRENT" == "1" ]; then
+if [ "$CURRENT" = "1" ]; then
     NEW="0.8"
 else
     NEW="1"
