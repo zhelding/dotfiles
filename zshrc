@@ -62,3 +62,15 @@ alias startemis="aws ec2 start-instances --instance-ids i-048a83011cc3bc0d1"
 function tmux-help () {
     cat ~/wiki/'tmux cheatsheet.wiki' | grep $1
 }
+
+function pomo () {
+    if [ -z $1 ]; then
+        echo '25 5' > ~/.pomodoro_session
+    elif [ "$1" = "r" ]; then
+        rm ~/.pomodoro_session
+    elif [ -z $2 ]; then
+        echo $1 ' 5' > ~/.pomodoro_session
+    else
+        echo $1 ' ' $2 > ~/.pomodoro_session
+    fi
+}
