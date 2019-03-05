@@ -35,6 +35,15 @@ if command -v pyenv 1>/dev/null 2>&1; then
     eval "$(pyenv init -)"
 fi
 
+# Auto ssh-agent
+if ! pgrep -u "$USER" ssh-agent > /dev/null; then
+    ssh-agent > ~/.ssh-agent-info
+fi
+
+if [[ ! "$SSH_AUTH_SOCK" ]]; then
+    eval "$(head -2 ~/.ssh-agent-info)"
+fi
+
 # Define aliases
 alias gaps="i3-msg 'gaps inner all set 10'"
 alias nogaps="i3-msg 'gaps inner all set 0'"
