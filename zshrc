@@ -4,7 +4,8 @@ export TERM="xterm-256color"
 export PATH="$PATH:$(ruby -e 'print Gem.user_dir')/bin"
 
 # Move cursor with ctrl-a / ctrl-e
-bindkey -e
+bindkey -v
+export KEYTIMEOUT=1
 
 # Shell history settings
 HISTFILE=~/.histfile
@@ -18,7 +19,8 @@ compinit
 # Enable powerlevel9k theme
 source /usr/share/zsh-theme-powerlevel9k/powerlevel9k.zsh-theme
 
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(host dir newline vcs)
+POWERLEVEL9K_PROMPT_ON_NEWLINE=true
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(host vi_mode dir vcs)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs time)
 
 # Import colorscheme from pywal
