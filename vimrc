@@ -35,6 +35,7 @@ let g:vimwiki_list = [{'path': '~/wiki/'}]
 nnoremap <Leader>we :Vimwiki2HTML <CR>
 
 let g:airline_powerline_fonts = 1
+let g:airline_theme='bubblegum'
 
 " Plugins
 call vundle#begin()
