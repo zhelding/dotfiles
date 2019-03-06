@@ -34,6 +34,8 @@ autocmd FileType nerdtree setlocal number relativenumber
 let g:vimwiki_list = [{'path': '~/wiki/'}]
 nnoremap <Leader>we :Vimwiki2HTML <CR>
 
+let g:airline_powerline_fonts = 1
+
 " Plugins
 call vundle#begin()
 
@@ -43,6 +45,8 @@ Plugin 'w0rp/ale'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'vimwiki/vimwiki'
 Plugin 'dylanaraps/wal'
+Plugin 'tpope/vim-fugitive'
+Plugin 'vim-airline/vim-airline'
 
 call vundle#end()
 
