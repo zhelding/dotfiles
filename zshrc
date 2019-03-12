@@ -55,7 +55,7 @@ alias ls="ls --color=auto"
 alias transp="toggle-transparency"
 alias deorphan='[[ -n $(yay -Qtd) ]] && yay -Rns $(yay -Qtdq) || echo "No" \
                 "orphans to remove"'
-alias startemis="aws ec2 start-instances --instance-ids i-048a83011cc3bc0d1"
+alias startemis="aws ec2 --profile personal start-instances --instance-ids i-048a83011cc3bc0d1"
 
 # BEGIN vivian
 #alias multimon="toggle-multimonitor"

@@ -46,7 +46,18 @@ padding-right = 2
 
 modules-left = i3
 modules-center = music
-modules-right = pomodoro arch-updates network speakers headphones battery date
+
+# BEGIN echidna
+#modules-right = pomodoro arch-updates network speakers headphones battery date
+# END echidna
+
+# BEGIN vivian
+#modules-right = pomodoro arch-updates network speakers headphones battery date
+# END vivian
+
+# BEGIN hestia
+#modules-right = pomodoro arch-updates network speakers battery date
+# END hestia
 
 tray-position = right
 
@@ -147,7 +158,13 @@ type = internal/network
 [module/speakers]
 type = internal/pulseaudio
 
-sink = alsa_output.pci-0000_00_1f.3.analog-stereo
+# BEGIN vivian
+#sink = alsa_output.pci-0000_00_1f.3.analog-stereo
+# END vivian
+
+# BEGIN hestia
+#sink = alsa_output.pci-0000_00_1b.0.analog-stereo
+# END hestia
 
 format-volume = <ramp-volume> <label-volume>
 
@@ -160,7 +177,7 @@ ramp-volume-2 = 
 [module/headphones]
 type = internal/pulseaudio
 
-sink = bluez_sink.D0_8A_55_D0_45_66.a2dp_sink 
+sink = bluez_sink.D0_8A_55_D0_45_66.a2dp_sink
 
 format-volume =  <label-volume>
 
