@@ -47,6 +47,10 @@ padding-right = 2
 modules-left = i3
 modules-center = music
 
+# BEGIN echidna
+#modules-right = pomodoro arch-updates network speakers headphones battery date
+# END echidna
+
 # BEGIN vivian
 #modules-right = pomodoro arch-updates network speakers headphones battery date
 # END vivian
