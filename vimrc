@@ -31,6 +31,8 @@ set splitright
 let NERDTreeShowLineNumbers=1
 autocmd FileType nerdtree setlocal number relativenumber
 
+map <C-n> :NERDTreeToggle<CR>
+
 let g:vimwiki_list = [{'path': '~/wiki/'}]
 nnoremap <Leader>we :Vimwiki2HTML <CR>
 
@@ -43,6 +45,13 @@ let g:fzf_action = {
     \ 'ctrl-v': 'vsplit'}
 
 let g:fzf_layout = { 'down': '~15%' }
+
+let g:fzf_buffers_jump = 1
+
+" fzf shortcuts
+nnoremap F :Files<CR>
+nnoremap B :Buffers<CR>
+nnoremap L :Lines<CR>
 
 " Plugins
 call vundle#begin()
