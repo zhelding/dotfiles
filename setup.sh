@@ -14,7 +14,7 @@ git config --global user.email "zoe.helding@gmail.com"
 git config --global user.name "Zoe Helding"
 
 ln -s dotfiles/vimrc .vimrc
-yay -S vim vundle flake8 tmux aws-cli
+yay -S vim vundle flake8 fzf tmux aws-cli
 
 ln -s ~/dotfiles/tmux.conf ~/.tmux.conf
 

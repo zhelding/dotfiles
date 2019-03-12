@@ -25,6 +25,7 @@ POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs time)
 
 # Import colorscheme from pywal
 (cat ~/.cache/wal/sequences &)
+source ~/.cache/wal/colors.sh
 
 # pyenv settings
 export PYENV_ROOT="$HOME/.pyenv"

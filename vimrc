@@ -37,6 +37,13 @@ nnoremap <Leader>we :Vimwiki2HTML <CR>
 let g:airline_powerline_fonts = 1
 let g:airline_theme='bubblegum'
 
+let g:fzf_action = {
+    \ 'ctrl-t': 'tab split',
+    \ 'ctrl-x': 'split',
+    \ 'ctrl-v': 'vsplit'}
+
+let g:fzf_layout = { 'down': '~15%' }
+
 " Plugins
 call vundle#begin()
 
@@ -49,6 +56,7 @@ Plugin 'dylanaraps/wal'
 Plugin 'tpope/vim-fugitive'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+Plugin 'junegunn/fzf.vim'
 
 call vundle#end()
 
