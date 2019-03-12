@@ -3,9 +3,8 @@ export TERM="xterm-256color"
 
 export PATH="$PATH:$(ruby -e 'print Gem.user_dir')/bin"
 
-# Move cursor with ctrl-a / ctrl-e
 bindkey -v
-export KEYTIMEOUT=1
+bindkey "^R" history-incremental-search-backward
 
 # Shell history settings
 HISTFILE=~/.histfile
