@@ -6,6 +6,8 @@ export PATH="$PATH:$(ruby -e 'print Gem.user_dir')/bin"
 bindkey -v
 bindkey "^R" history-incremental-search-backward
 
+KEYTIMEOUT=1
+
 # Shell history settings
 HISTFILE=~/.histfile
 HISTSIZE=1000

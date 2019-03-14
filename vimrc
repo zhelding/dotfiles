@@ -11,6 +11,8 @@ set expandtab
 set tabstop=4
 set shiftwidth=4
 
+set timeoutlen=1000 ttimeoutlen=0
+
 " File type based indentation
 filetype plugin indent on
 
