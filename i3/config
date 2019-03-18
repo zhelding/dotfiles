@@ -14,7 +14,7 @@ bindsym $mod+Return exec i3-sensible-terminal
 bindsym $mod+Shift+q kill
 
 # Start rofi
-bindsym $mod+d exec --no-startup-id rofi -show drun -theme $HOME/.cache/wal/colors-rofi-dark.rasi
+bindsym $mod+d exec --no-startup-id "rofi -show drun -modi drun,window -theme $HOME/.cache/wal/colors-rofi-dark.rasi"
 
 # Change focus
 bindsym $mod+h focus left
