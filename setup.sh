@@ -14,11 +14,11 @@ git config --global user.email "zoe.helding@gmail.com"
 git config --global user.name "Zoe Helding"
 
 ln -s dotfiles/vimrc .vimrc
-yay -S vim vundle flake8 fzf tmux aws-cli
+yay -S vim vundle flake8 fzf tmux aws-cli powerline
 
 ln -s ~/dotfiles/tmux.conf ~/.tmux.conf
 
-yay -S ttf-dejavu nerd-fonts-dejavu-complete
+yay -S ttf-dejavu nerd-fonts-dejavu-complete powerline-fonts
 
 ln -s dotfiles/zshrc .zshrc
 yay -S zsh zsh-theme-powerlevel9k
