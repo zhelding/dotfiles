@@ -170,10 +170,18 @@ bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5%
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5%
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle
 
+# BEGIN vivian
+#bindsym Shift+XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume bluez_sink.D0_8A_55_D0_45_66.a2dp_sink +5%
+#bindsym Shift+XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume bluez_sink.D0_8A_55_D0_45_66.a2dp_sink -5%
+#bindsym Shift+XF86AudioMute exec --no-startup-id pactl set-sink-mute bluez_sink.D0_8A_55_D0_45_66.a2dp_sink toggle
+# END vivian
 
-bindsym Shift+XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume bluez_sink.D0_8A_55_D0_45_66.a2dp_sink +5%
-bindsym Shift+XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume bluez_sink.D0_8A_55_D0_45_66.a2dp_sink -5%
-bindsym Shift+XF86AudioMute exec --no-startup-id pactl set-sink-mute bluez_sink.D0_8A_55_D0_45_66.a2dp_sink toggle
+# BEGIN echidna
+#bindsym Shift+XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume alsa_output.usb-Kingston_HyperX_7.1_Audio_00000000-00.analog-stereo +5%
+#bindsym Shift+XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume alsa_output.usb-Kingston_HyperX_7.1_Audio_00000000-00.analog-stereo -5%
+#bindsym Shift+XF86AudioMute exec --no-startup-id pactl set-sink-mute alsa_output.usb-Kingston_HyperX_7.1_Audio_00000000-00.analog-stereo toggle
+# END echidna
+
 
 # Media keys
 bindsym XF86AudioPlay exec --no-startup-idplayerctl play-pause
