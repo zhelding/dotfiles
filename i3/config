@@ -4,6 +4,8 @@
 
 set $mod Mod4
 
+font pango:DejaVu Sans Mono 10
+
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
@@ -14,7 +16,7 @@ bindsym $mod+Return exec i3-sensible-terminal
 bindsym $mod+Shift+q kill
 
 # Start rofi
-bindsym $mod+d exec --no-startup-id rofi -show drun -theme $HOME/.cache/wal/colors-rofi-dark.rasi
+bindsym $mod+d exec --no-startup-id "rofi -show drun -modi drun,window -theme $HOME/.cache/wal/colors-rofi-dark.rasi"
 
 # Change focus
 bindsym $mod+h focus left
