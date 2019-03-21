@@ -207,7 +207,7 @@ bindsym $mod+Shift+x exec --no-startup-id lock
 # END echidna
 
 # BEGIN vivian
-#exec --no-startup-id xrandr --output HDMI2 --off --output HDMI1 --mode 1920x1080 --pos 0x0 --rotate normal --output DP1 --off --output eDP1 --primary --mode 1366x768 --pos 1920x312 --rotate normal --output VIRTUAL1 --off
+#exec --no-startup-id xrandr --output HDMI2 --off --output HDMI1 --mode 1920x1080 --pos 1366x0 --rotate left --output DP1 --off --output eDP1 --primary --mode 1366x768 --pos 0x1152 --rotate normal --output VIRTUAL1 --off
 #
 #workspace 1 output eDP1
 #workspace 2 output eDP1
