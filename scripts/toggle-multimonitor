@@ -16,7 +16,7 @@ else
     --output VIRTUAL1 --off
 fi
 
-set-wal scale $wallpaper $wallpapervert
+set-wal fill $wallpaper $wallpapervert
 
 i3-msg 'workspace 6'
 i3-msg 'workspace 1'
