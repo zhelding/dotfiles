@@ -36,7 +36,7 @@ autocmd FileType nerdtree setlocal number relativenumber
 map <C-n> :NERDTreeToggle<CR>
 
 let g:vimwiki_list = [{'path': '~/wiki/'}]
-nnoremap <Leader>we :Vimwiki2HTML <CR>
+nnoremap <Leader>we :VimwikiAll2HTML <CR>
 
 let g:airline_powerline_fonts = 1
 let g:airline_theme='bubblegum'
