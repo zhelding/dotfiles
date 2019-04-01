@@ -150,11 +150,18 @@ exec --no-startup-id polybar primary
 #exec --no-startup-id polybar secondary
 # END vivian
 
-# Set up gaps
-for_window [class="^.*"] border pixel 0
+for_window [class="^.*"] border pixel 5
 
+#gray green blue orange red
+client.focused #303030 #303030 #ffffff #b2b2b2 #303030
+client.unfocused #5f676a #5f676a #ffffff #b2b2b2 #5f676a
+
+# Set up gaps
 gaps inner 10
 gaps outer 0
+
+# Border around termite windows
+#for_window [class="Termite"] border pixel 5
 
 # Authy always floats
 for_window [title="Authy"] floating enable
