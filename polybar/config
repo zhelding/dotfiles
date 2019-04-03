@@ -166,6 +166,12 @@ type = internal/pulseaudio
 #sink = alsa_output.pci-0000_00_1b.0.analog-stereo
 # END hestia
 
+# BEGIN echidna
+#sink = alsa_output.usb-1130_USB_AUDIO-00.analog-stereo
+# END echidna
+
+use-ui-max = true
+
 format-volume = <ramp-volume> <label-volume>
 
 label-muted = 
@@ -177,7 +183,15 @@ ramp-volume-2 = 
 [module/headphones]
 type = internal/pulseaudio
 
-sink = bluez_sink.D0_8A_55_D0_45_66.a2dp_sink
+# BEGIN vivian
+#sink = bluez_sink.D0_8A_55_D0_45_66.a2dp_sink
+# END vivian
+
+# BEGIN echidna
+#sink = alsa_output.usb-Kingston_HyperX_7.1_Audio_00000000-00.analog-stereo
+# END echidna
+
+use-ui-max = true
 
 format-volume =  <label-volume>
 

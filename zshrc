@@ -60,6 +60,7 @@ alias startemis="aws ec2 --profile personal start-instances --instance-ids i-048
 
 # BEGIN vivian
 #alias multimon="toggle-multimonitor"
+#alias rotate="rotate-monitor"
 # END vivian
 
 # Define functions
@@ -70,6 +71,9 @@ function tmux-help () {
 function pomo () {
     if [ -z $1 ]; then
         echo '25 5' > ~/.pomodoro_session
+    elif [ "$1" = "l" ]; then
+        echo '25 5' > ~/.pomodoro_session
+        echo $2 >> ~/.pomodoro_log
     elif [ "$1" = "r" ]; then
         rm ~/.pomodoro_session
     elif [ -z $2 ]; then
@@ -77,4 +81,8 @@ function pomo () {
     else
         echo $1 ' ' $2 > ~/.pomodoro_session
     fi
+}
+
+function pomolog () {
+    grep -o $1 ~/.pomodoro_log | wc -l
 }
