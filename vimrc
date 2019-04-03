@@ -33,6 +33,8 @@ set splitright
 let NERDTreeShowLineNumbers=1
 autocmd FileType nerdtree setlocal number relativenumber
 
+autocmd FileType tf,yaml setlocal tabstop=2 shiftwidth=2
+
 map <C-n> :NERDTreeToggle<CR>
 
 let g:vimwiki_list = [{'path': '~/wiki/'}]
