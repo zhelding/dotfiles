@@ -28,15 +28,15 @@
     # the top and down respectively.
     # The width can be negative.  In this case the actual width is the
     # screen width minus the width defined in within the geometry option.
-    
+
     # BEGIN echidna
     #geometry = "300x5-10+40"
     # END echidna
-    
+
     # BEGIN hestia
-    #geometry = "500x5-10+40"
+    #geometry = "500x5-10+60"
     # END hestia
-    
+
     # BEGIN vivian
     #geometry = "300x5-10+40"
     # END vivian
@@ -98,11 +98,11 @@
     # BEGIN echidna
     #font = DejaVu Sans 11
     # END echidna
-    
+
     # BEGIN hestia
-    #font = DejaVu Sans 18
+    #font = DejaVu Sans 9
     # END hestia
-    
+
     # BEGIN vivian
     #font = DejaVu Sans 11
     # END vivian
