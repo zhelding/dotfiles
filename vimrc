@@ -70,6 +70,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'junegunn/fzf.vim'
+Plugin 'wakatime/vim-wakatime'
 
 call vundle#end()
 
