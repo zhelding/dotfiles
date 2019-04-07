@@ -8,6 +8,9 @@ if [ "$PREFIX" = "P" ]; then
 elif [ "${STATUS: -3}" != "min" ] && [ "${STATUS: -1}" != "h" ] \
     && [ ! -z "$STATUS" ]; then
     echo %{T2}☕%{T-} ${STATUS: -5}
+    if [ "${STATUS: -2}" = "00" ]; then
+        notify-send 'DUNST_COMMAND_RESUME'
+    fi
 else
     echo
 fi
