@@ -69,20 +69,17 @@ function tmux-help () {
 }
 
 function pomo () {
+
+    notify-send 'DUNST_COMMAND_PAUSE'
+
     if [ -z $1 ]; then
         echo '25 5' > ~/.pomodoro_session
-    elif [ "$1" = "l" ]; then
-        echo '25 5' > ~/.pomodoro_session
-        echo $2 >> ~/.pomodoro_log
     elif [ "$1" = "r" ]; then
         rm ~/.pomodoro_session
+        notify-send 'DUNST_COMMAND_RESUME'
     elif [ -z $2 ]; then
         echo $1 ' 5' > ~/.pomodoro_session
     else
         echo $1 ' ' $2 > ~/.pomodoro_session
     fi
-}
-
-function pomolog () {
-    grep -o $1 ~/.pomodoro_log | wc -l
 }
