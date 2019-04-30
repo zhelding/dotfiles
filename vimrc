@@ -37,11 +37,15 @@ autocmd FileType tf,yaml setlocal tabstop=2 shiftwidth=2
 
 map <C-n> :NERDTreeToggle<CR>
 
+let g:taboo_tab_format = " %N %f "
+let g:taboo_renamed_tab_format = " %N %l "
+nnoremap T :TabooRename
+
 let g:vimwiki_list = [{'path': '~/wiki/'}]
 nnoremap <Leader>we :VimwikiAll2HTML <CR>
 
 let g:airline_powerline_fonts = 1
-let g:airline_theme='bubblegum'
+let g:airline_theme='dracula'
 
 let g:fzf_action = {
     \ 'ctrl-t': 'tab split',
@@ -62,6 +66,7 @@ call vundle#begin()
 
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'scrooloose/nerdtree'
+Plugin 'gcmt/taboo.vim'
 Plugin 'w0rp/ale'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'vimwiki/vimwiki'
