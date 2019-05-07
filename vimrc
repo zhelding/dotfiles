@@ -61,6 +61,8 @@ nnoremap F :Files<CR>
 nnoremap B :Buffers<CR>
 nnoremap L :Lines<CR>
 
+let b:surround_{char2nr('r')} = "{{ \r }}"
+
 " Plugins
 call vundle#begin()
 
