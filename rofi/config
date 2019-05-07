@@ -1,4 +1,5 @@
 rofi.modi:  drun
+rofi.theme: ~/.cache/wal/colors-rofi-dark.rasi
 
 # BEGIN echidna
 #rofi.font: DejaVuSansMono Nerd Font 11
