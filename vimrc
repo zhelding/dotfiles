@@ -65,6 +65,7 @@ nnoremap L :Lines<CR>
 call vundle#begin()
 
 Plugin 'jiangmiao/auto-pairs'
+Plugin 'tpope/vim-surround'
 Plugin 'scrooloose/nerdtree'
 Plugin 'gcmt/taboo.vim'
 Plugin 'w0rp/ale'
