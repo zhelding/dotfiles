@@ -56,6 +56,8 @@ nnoremap L :Lines<CR>
 
 let b:surround_{char2nr('r')} = "{{ \r }}"
 
+runtime macros/matchit.vim
+
 " Plugins
 call vundle#begin()
 
