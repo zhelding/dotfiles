@@ -1,5 +1,3 @@
-syntax on
-
 " Case-insensitive search
 set ignorecase
 
@@ -12,9 +10,6 @@ set tabstop=4
 set shiftwidth=4
 
 set timeoutlen=1000 ttimeoutlen=0
-
-" File type based indentation
-filetype plugin indent on
 
 set colorcolumn=81
 
@@ -32,8 +27,6 @@ set splitright
 
 let NERDTreeShowLineNumbers=1
 autocmd FileType nerdtree setlocal number relativenumber
-
-autocmd FileType tf,yaml setlocal tabstop=2 shiftwidth=2
 
 map <C-n> :NERDTreeToggle<CR>
 
@@ -66,6 +59,7 @@ let b:surround_{char2nr('r')} = "{{ \r }}"
 " Plugins
 call vundle#begin()
 
+Plugin 'hashivim/vim-terraform'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'tpope/vim-surround'
 Plugin 'scrooloose/nerdtree'
@@ -80,5 +74,10 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'junegunn/fzf.vim'
 
 call vundle#end()
+
+syntax on
+
+" File type based indentation
+filetype plugin indent on
 
 colorscheme wal
