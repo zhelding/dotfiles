@@ -16,7 +16,7 @@ bindsym $mod+Return exec i3-sensible-terminal
 bindsym $mod+Shift+q kill
 
 # Start rofi
-bindsym $mod+d exec --no-startup-id "rofi -show drun -modi drun,window -theme $HOME/.cache/wal/colors-rofi-dark.rasi"
+bindsym $mod+d exec --no-startup-id "rofi -show drun -modi drun,window"
 
 # Change focus
 bindsym $mod+h focus left
@@ -178,6 +178,8 @@ exec --no-startup-id compton -b
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5%
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5%
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle
+bindsym Ctrl+XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +1%
+bindsym Ctrl+XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -1%
 
 # BEGIN vivian
 #bindsym Shift+XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume bluez_sink.D0_8A_55_D0_45_66.a2dp_sink +5%

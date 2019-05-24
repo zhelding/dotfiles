@@ -1,5 +1,3 @@
-syntax on
-
 " Case-insensitive search
 set ignorecase
 
@@ -12,9 +10,6 @@ set tabstop=4
 set shiftwidth=4
 
 set timeoutlen=1000 ttimeoutlen=0
-
-" File type based indentation
-filetype plugin indent on
 
 set colorcolumn=81
 
@@ -33,15 +28,17 @@ set splitright
 let NERDTreeShowLineNumbers=1
 autocmd FileType nerdtree setlocal number relativenumber
 
-autocmd FileType tf,yaml setlocal tabstop=2 shiftwidth=2
-
 map <C-n> :NERDTreeToggle<CR>
+
+let g:taboo_tab_format = " %N %f "
+let g:taboo_renamed_tab_format = " %N %l "
+nnoremap T :TabooRename
 
 let g:vimwiki_list = [{'path': '~/wiki/'}]
 nnoremap <Leader>we :VimwikiAll2HTML <CR>
 
 let g:airline_powerline_fonts = 1
-let g:airline_theme='bubblegum'
+let g:airline_theme='dracula'
 
 let g:fzf_action = {
     \ 'ctrl-t': 'tab split',
@@ -57,11 +54,18 @@ nnoremap F :Files<CR>
 nnoremap B :Buffers<CR>
 nnoremap L :Lines<CR>
 
+let b:surround_{char2nr('r')} = "{{ \r }}"
+
+runtime macros/matchit.vim
+
 " Plugins
 call vundle#begin()
 
+Plugin 'hashivim/vim-terraform'
 Plugin 'jiangmiao/auto-pairs'
+Plugin 'tpope/vim-surround'
 Plugin 'scrooloose/nerdtree'
+Plugin 'gcmt/taboo.vim'
 Plugin 'w0rp/ale'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'vimwiki/vimwiki'
@@ -70,8 +74,12 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'junegunn/fzf.vim'
-Plugin 'wakatime/vim-wakatime'
 
 call vundle#end()
+
+syntax on
+
+" File type based indentation
+filetype plugin indent on
 
 colorscheme wal
