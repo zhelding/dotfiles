@@ -48,15 +48,15 @@ modules-left = i3
 modules-center = music
 
 # BEGIN echidna
-#modules-right = pomodoro arch-updates network speakers headphones battery date
+#modules-right = arch-updates network speakers headphones battery date
 # END echidna
 
 # BEGIN vivian
-#modules-right = pomodoro arch-updates network speakers headphones battery date
+#modules-right = arch-updates network speakers headphones battery date
 # END vivian
 
 # BEGIN hestia
-#modules-right = pomodoro arch-updates network speakers battery date
+#modules-right = arch-updates network speakers battery date
 # END hestia
 
 tray-position = right
@@ -121,18 +121,6 @@ interval = 1
 format = <label>
 
 label = %output:0:99:...%
-
-[module/pomodoro]
-type = custom/script
-
-exec = pomodoro-parse
-interval = 1
-
-[module/arch-updates]
-type = custom/script
-
-exec = get-arch-updates
-interval = 600
 
 [module/network]
 type = internal/network
