@@ -22,7 +22,7 @@ yay -S ttf-dejavu nerd-fonts-dejavu-complete powerline-fonts
 
 ln -s dotfiles/zshrc .zshrc
 yay -S zsh zsh-theme-powerlevel9k
-chsh -s $(which zsh)
+sudo chsh -s $(which zsh) zhelding
 
 yay -S ranger w3m
 
