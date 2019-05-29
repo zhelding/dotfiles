@@ -122,6 +122,12 @@ format = <label>
 
 label = %output:0:99:...%
 
+[module/arch-updates]
+type = custom/script
+
+exec = get-arch-updates
+interval = 600
+
 [module/network]
 type = internal/network
 
