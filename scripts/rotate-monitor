@@ -3,13 +3,13 @@
 wallpaper="$(cat $HOME/.cache/wal/wal)"
 wallpapervert="$(cat $HOME/.cache/wal/wal-vert)"
 
-if [[ $(xrandr | grep HDMI1 | grep left -o | wc -l) = 2 ]]; then
-    xrandr --output HDMI2 --off --output HDMI1 --mode 1920x1080 --pos 1366x0 \
-    --rotate normal --output DP1 --off --output eDP1 --primary --mode 1366x768 \
+if [[ $(xrandr | grep HDMI-1 | grep left -o | wc -l) = 2 ]]; then
+    xrandr --output HDMI-2 --off --output HDMI-1 --mode 1920x1080 --pos 1366x0 \
+    --rotate normal --output DP1 --off --output eDP-1 --primary --mode 1366x768 \
     --pos 0x312 --rotate normal --output VIRTUAL1 --off
 else
-    xrandr --output HDMI2 --off --output HDMI1 --mode 1920x1080 --pos 1366x0 \
-    --rotate left --output DP1 --off --output eDP1 --primary --mode 1366x768 \
+    xrandr --output HDMI-2 --off --output HDMI-1 --mode 1920x1080 --pos 1366x0 \
+    --rotate left --output DP1 --off --output eDP-1 --primary --mode 1366x768 \
     --pos 0x1152 --rotate normal --output VIRTUAL1 --off
 fi
 

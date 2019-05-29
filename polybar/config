@@ -15,7 +15,7 @@ alert = ${xrdb:color3:#222}
 # END echidna
 
 # BEGIN vivian
-#monitor = eDP1
+#monitor = eDP-1
 #height = 30
 # END vivian
 
@@ -68,7 +68,7 @@ tray-position = right
 # END echidna
 
 # BEGIN vivian
-#monitor = HDMI1
+#monitor = HDMI-1
 # END vivian
 
 background = ${colors.background}
