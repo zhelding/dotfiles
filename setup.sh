@@ -4,7 +4,7 @@ source base-setup.sh
 
 # Base i3-gaps setup
 
-yay -Rdd vim
+yay -Rdd --noconfirm vim
 yay -S --noconfirm xorg-server i3-gaps i3lock-color lightdm lightdm-gtk-greeter termite dmenu i3status gvim
 echo -e '[Desktop]\nSession=i3' >> ~/.dmrc
 

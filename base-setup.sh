@@ -3,7 +3,7 @@
 # Base system setup
 
 cd ~
-sudo pacman -S --noconfirm git
+sudo pacman -S --noconfirm git go
 git clone https://aur.archlinux.org/yay.git
 cd yay
 makepkg -i --noconfirm
@@ -22,7 +22,7 @@ yay -S --noconfirm ttf-dejavu nerd-fonts-dejavu-complete powerline-fonts
 
 ln -s dotfiles/zshrc .zshrc
 yay -S --noconfirm zsh zsh-theme-powerlevel9k
-chsh -s $(which zsh)
+sudo chsh -s $(which zsh) zhelding
 
 yay -S --noconfirm ranger w3m
 
