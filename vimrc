@@ -32,7 +32,7 @@ map <C-n> :NERDTreeToggle<CR>
 
 let g:taboo_tab_format = " %N %f "
 let g:taboo_renamed_tab_format = " %N %l "
-nnoremap T :TabooRename
+nnoremap T :TabooRename<space>
 
 let g:vimwiki_list = [{'path': '~/wiki/'}]
 nnoremap <Leader>we :VimwikiAll2HTML <CR>
