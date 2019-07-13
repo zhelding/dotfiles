@@ -56,6 +56,15 @@ let b:surround_{char2nr('r')} = "{{ \r }}"
 
 runtime macros/matchit.vim
 
+func! WordProcessorMode()
+    setlocal noexpandtab
+    map j gj
+    map k gk
+    setlocal linebreak
+    set colorcolumn=0
+endfu
+com! WP call WordProcessorMode()
+
 " Plugins
 call vundle#begin()
 
