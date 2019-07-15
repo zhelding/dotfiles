@@ -25,8 +25,10 @@ nnoremap <C-H> <C-W><C-H>
 set splitbelow
 set splitright
 
-let g:netrw_list_hide = '\(^\|\s\s\)\zs\.\S\+'
-let g:netrw_liststyle = 3
+let NERDTreeShowLineNumbers=1
+autocmd FileType nerdtree setlocal number relativenumber
+
+map <C-n> :NERDTreeToggle<CR>
 
 let g:taboo_tab_format = " %N %f "
 let g:taboo_renamed_tab_format = " %N %l "
@@ -71,7 +73,7 @@ call vundle#begin()
 Plugin 'hashivim/vim-terraform'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'tpope/vim-surround'
-Plugin 'tpope/vim-vinegar'
+Plugin 'scrooloose/nerdtree'
 Plugin 'gcmt/taboo.vim'
 Plugin 'w0rp/ale'
 Plugin 'christoomey/vim-tmux-navigator'
