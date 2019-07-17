@@ -7,19 +7,17 @@ wallpaper="$(cat $HOME/.cache/wal/wal)"
 wallpapervert="$(cat $HOME/.cache/wal/wal-vert)"
 
 if [[ $monitors = *"HDMI-"* ]]; then
-    xrandr --output HDMI-2 --off --output HDMI-1 --off --output DP1 --off \
+    xrandr --output HDMI-2 --off --output HDMI-1 --off --output DP-1 --off \
     --output eDP-1 --primary --mode 1366x768 --pos 0x0 --rotate normal \
     --output VIRTUAL1 --off
 else
-    xrandr --output HDMI-2 --off --output HDMI-1 --mode 1920x1080 --pos 1366x0 --rotate left \
-    --output DP1 --off --output eDP-1 --primary --mode 1366x768 --pos 0x1152 --rotate normal \
-    --output VIRTUAL1 --off
+    xrandr --output eDP-1 --primary --mode 1366x768 --pos 0x1152 --rotate \
+    normal --output HDMI-1 --mode 1920x1080 --pos 3286x0 --rotate left --output \
+    DP-1 --mode 1920x1080 --pos 1366x840 --rotate normal --output HDMI-2 --off
 fi
 
-set-wal fill $wallpaper $wallpapervert
-
-i3-msg 'workspace 6'
-i3-msg 'workspace 1'
+set-wal fill $wallpaper $wallpapervert $wallpaper
 
 polybar primary &>/dev/null &
 polybar secondary &>/dev/null &
+polybar temporary &>/dev/null &
