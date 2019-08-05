@@ -25,6 +25,9 @@ nnoremap <C-H> <C-W><C-H>
 set splitbelow
 set splitright
 
+set foldmethod=syntax
+set nofoldenable
+
 let NERDTreeShowLineNumbers=1
 autocmd FileType nerdtree setlocal number relativenumber
 
