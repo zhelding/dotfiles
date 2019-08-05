@@ -31,6 +31,8 @@ set nofoldenable
 let NERDTreeShowLineNumbers=1
 autocmd FileType nerdtree setlocal number relativenumber
 
+let g:NERDTreeWinSize=24
+
 map <C-n> :NERDTreeToggle<CR>
 
 let g:taboo_tab_format = " %N %f "
