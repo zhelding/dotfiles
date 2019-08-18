@@ -25,14 +25,19 @@ nnoremap <C-H> <C-W><C-H>
 set splitbelow
 set splitright
 
+set foldmethod=syntax
+set nofoldenable
+
 let NERDTreeShowLineNumbers=1
 autocmd FileType nerdtree setlocal number relativenumber
+
+let g:NERDTreeWinSize=24
 
 map <C-n> :NERDTreeToggle<CR>
 
 let g:taboo_tab_format = " %N %f "
 let g:taboo_renamed_tab_format = " %N %l "
-nnoremap T :TabooRename
+nnoremap T :TabooRename<space>
 
 let g:vimwiki_list = [{'path': '~/wiki/'}]
 nnoremap <Leader>we :VimwikiAll2HTML <CR>
@@ -57,6 +62,15 @@ nnoremap L :Lines<CR>
 let b:surround_{char2nr('r')} = "{{ \r }}"
 
 runtime macros/matchit.vim
+
+func! WordProcessorMode()
+    setlocal noexpandtab
+    map j gj
+    map k gk
+    setlocal linebreak
+    set colorcolumn=0
+endfu
+com! WP call WordProcessorMode()
 
 " Plugins
 call vundle#begin()

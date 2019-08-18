@@ -58,7 +58,6 @@ alias startemis="aws ec2 --profile personal start-instances --instance-ids i-048
 
 # BEGIN vivian
 #alias multimon="toggle-multimonitor"
-#alias rotate="rotate-monitor"
 # END vivian
 
 # Define functions

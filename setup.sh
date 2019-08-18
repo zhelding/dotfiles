@@ -1,6 +1,6 @@
 #!/bin/sh
 
-source base-setup.sh
+source ~/dotfiles/base-setup.sh
 
 # Base i3-gaps setup
 
