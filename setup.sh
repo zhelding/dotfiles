@@ -35,7 +35,6 @@ yay -S --noconfirm pulseaudio pavucontrol playerctl
 yay -S --noconfirm gpmdp
 yay -S --noconfirm ruby
 yay -S --noconfirm mir.qualia
-yay -S --noconfirm dropbox
 yay -S --noconfirm noto-fonts-emoji
 yay -S --noconfirm networkmanager
 
