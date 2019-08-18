@@ -238,5 +238,3 @@ bindsym $mod+Shift+x exec --no-startup-id lock
 #workspace X output HDMI-1
 #
 # END vivian
-
-exec --no-startup-id dropbox
