@@ -11,9 +11,9 @@ alert = ${xrdb:color3:#222}
 
 monitor = ${env:MONITOR:}
 
-# BEGIN echidna
+# BEGIN lilith
 #height = 30
-# END echidna
+# END lilith
 
 # BEGIN vivian
 #height = 30
@@ -29,10 +29,10 @@ foreground = ${colors.foreground}
 module-margin = 1
 padding-right = 2
 
-# BEGIN echidna
+# BEGIN lilith
 #font-0 = DejaVuSansMono Nerd Font:pixelsize=11
 #font-1 = Noto Color Emoji:scale=11
-# END echidna
+# END lilith
 
 # BEGIN hestia
 #font-0 = DejaVuSansMono Nerd Font:pixelsize=18
@@ -47,9 +47,9 @@ padding-right = 2
 modules-left = i3
 modules-center = music
 
-# BEGIN echidna
+# BEGIN lilith
 #modules-right = arch-updates network speakers headphones battery date
-# END echidna
+# END lilith
 
 # BEGIN vivian
 #modules-right = arch-updates network speakers headphones battery date
@@ -125,11 +125,11 @@ interval = 600
 [module/network]
 type = internal/network
 
-# BEGIN echidna
+# BEGIN lilith
 #interface = enp0s31f6
 #label-connected = 
 #label-disconnected = 
-# END echidna
+# END lilith
 
 # BEGIN hestia
 #interface = wlp3s0
@@ -154,9 +154,9 @@ type = internal/pulseaudio
 #sink = alsa_output.pci-0000_00_1b.0.analog-stereo
 # END hestia
 
-# BEGIN echidna
+# BEGIN lilith
 #sink = alsa_output.usb-1130_USB_AUDIO-00.analog-stereo
-# END echidna
+# END lilith
 
 use-ui-max = true
 
@@ -175,9 +175,9 @@ type = internal/pulseaudio
 #sink = bluez_sink.D0_8A_55_D0_45_66.a2dp_sink
 # END vivian
 
-# BEGIN echidna
+# BEGIN lilith
 #sink = alsa_output.usb-Kingston_HyperX_7.1_Audio_00000000-00.analog-stereo
-# END echidna
+# END lilith
 
 use-ui-max = true
 
