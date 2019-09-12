@@ -10,7 +10,7 @@ alert = ${xrdb:color3:#222}
 [bar/primary]
 
 # BEGIN echidna
-#monitor = HDMI-0
+#monitor = DP-5
 #height = 30
 # END echidna
 
@@ -64,7 +64,7 @@ tray-position = right
 [bar/secondary]
 
 # BEGIN echidna
-#monitor = DP-4
+#monitor = DP-2
 # END echidna
 
 # BEGIN vivian
