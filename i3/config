@@ -142,14 +142,14 @@ bindsym $mod+r mode "resize"
 # Start up polybar
 
 # BEGIN lilith
-#exec --no-startup-id pbar DP-5 primary
-#exec --no-startup-id pbar DP-2 secondary
+#exec --no-startup-id MONITOR=DP-5  polybar primary
+#exec --no-startup-id MONITOR=DP-2  polybar secondary
 # END lilith
 
 # BEGIN vivian
-#exec --no-startup-id pbar DP-1 primary
-#exec --no-startup-id pbar HDMI-1 secondary
-#exec --no-startup-id pbar eDP-1 secondary
+#exec --no-startup-id MONITOR=DP-1  polybar primary
+#exec --no-startup-id MONITOR=HDMI-1  polybar secondary
+#exec --no-startup-id MONITOR=eDP-1  polybar secondary
 # END vivian
 
 for_window [class="^.*"] border pixel 5
@@ -171,7 +171,7 @@ for_window [title="Authy"] floating enable
 # Load last used wallpaper and colorscheme
 set $wallpaper `cat $HOME/.cache/wal/wal`
 set $wallpaper-vert `cat $HOME/.cache/wal/wal-vert`
-exec --no-startup-id set-wal scale $wallpaper $wallpaper-vert $wallpaper
+exec --no-startup-id set-wal scale $wallpaper $wallpaper $wallpaper-vert
 
 # Start up compositor
 exec --no-startup-id compton -b
