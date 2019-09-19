@@ -148,6 +148,7 @@ exec --no-startup-id polybar primary
 
 # BEGIN vivian
 #exec --no-startup-id polybar secondary
+#exec --no-startup-id polybar temporary
 # END vivian
 
 for_window [class="^.*"] border pixel 5
