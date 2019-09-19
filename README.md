@@ -11,7 +11,7 @@ So, I use [mir.qualia](https://github.com/darkfeline/mir.qualia), which allows
 me to conditionally comment out blocks of config files based on the machine
 name. With this method, I maintain four separate machines:
 
-- **echidna**: Home desktop
+- **lilith**: Home desktop
 - **hestia**: Home laptop
 - **vivian**: Work laptop
 - **artemis**: Cloud workstation

@@ -140,15 +140,16 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # Start up polybar
-exec --no-startup-id polybar primary
 
-# BEGIN echidna
-#exec --no-startup-id polybar secondary
-# END echidna
+# BEGIN lilith
+#exec --no-startup-id pbar DP-5 primary
+#exec --no-startup-id pbar DP-2 secondary
+# END lilith
 
 # BEGIN vivian
-#exec --no-startup-id polybar secondary
-#exec --no-startup-id polybar temporary
+#exec --no-startup-id pbar DP-1 primary
+#exec --no-startup-id pbar HDMI-1 secondary
+#exec --no-startup-id pbar eDP-1 secondary
 # END vivian
 
 for_window [class="^.*"] border pixel 5
@@ -188,11 +189,11 @@ bindsym Ctrl+XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -
 #bindsym Shift+XF86AudioMute exec --no-startup-id pactl set-sink-mute bluez_sink.D0_8A_55_D0_45_66.a2dp_sink toggle
 # END vivian
 
-# BEGIN echidna
+# BEGIN lilith
 #bindsym Shift+XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume alsa_output.usb-Kingston_HyperX_7.1_Audio_00000000-00.analog-stereo +5%
 #bindsym Shift+XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume alsa_output.usb-Kingston_HyperX_7.1_Audio_00000000-00.analog-stereo -5%
 #bindsym Shift+XF86AudioMute exec --no-startup-id pactl set-sink-mute alsa_output.usb-Kingston_HyperX_7.1_Audio_00000000-00.analog-stereo toggle
-# END echidna
+# END lilith
 
 
 # Media keys
@@ -208,21 +209,21 @@ bindsym XF86MonBrightnessDown exec --no-startup-id light -U 10
 bindsym $mod+Shift+x exec --no-startup-id lock
 
 # Multimonitor setup
-# BEGIN echidna
-#exec --no-startup-id xrandr --output HDMI-0 --mode 1920x1080 --pos 0x336 --rotate normal --output DP-4 --mode 1920x1080 --pos 1920x0 --rotate left --output DP-3 --off
+# BEGIN lilith
+#exec --no-startup-id xrandr --output DVI-D-1 --off --output DP-2 --mode 1920x1080 --pos 1920x0 --rotate left --output DP-3 --off --output HDMI-1 --off --output DP-5 --primary --mode 1920x1080 --pos 0x256 --rotate normal
 #
-#workspace 1 output HDMI-0
-#workspace 2 output HDMI-0
-#workspace 3 output HDMI-0
-#workspace 4 output HDMI-0
-#workspace 5 output HDMI-0
-#workspace 6 output DP-4
-#workspace 7 output DP-4
-#workspace 8 output DP-4
-#workspace 9 output DP-4
-#workspace X output DP-4
+#workspace 1 output DP-5
+#workspace 2 output DP-5
+#workspace 3 output DP-5
+#workspace 4 output DP-5
+#workspace 5 output DP-5
+#workspace 6 output DP-2
+#workspace 7 output DP-2
+#workspace 8 output DP-2
+#workspace 9 output DP-2
+#workspace X output DP-2
 #
-# END echidna
+# END lilith
 
 # BEGIN vivian
 #exec --no-startup-id xrandr --output eDP-1 --primary --mode 1366x768 --pos 0x1152 --rotate normal --output HDMI-1 --mode 1920x1080 --pos 3286x0 --rotate left --output DP-1 --mode 1920x1080 --pos 1366x840 --rotate normal --output HDMI-2 --off
@@ -239,5 +240,3 @@ bindsym $mod+Shift+x exec --no-startup-id lock
 #workspace X output HDMI-1
 #
 # END vivian
-
-exec --no-startup-id dropbox

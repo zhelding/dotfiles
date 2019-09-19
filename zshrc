@@ -65,18 +65,6 @@ function tmux-help () {
     cat ~/wiki/'tmux cheatsheet.wiki' | grep $1
 }
 
-function pomo () {
-
-    notify-send 'DUNST_COMMAND_PAUSE'
-
-    if [ -z $1 ]; then
-        echo '25 5' > ~/.pomodoro_session
-    elif [ "$1" = "r" ]; then
-        rm ~/.pomodoro_session
-        notify-send 'DUNST_COMMAND_RESUME'
-    elif [ -z $2 ]; then
-        echo $1 ' 5' > ~/.pomodoro_session
-    else
-        echo $1 ' ' $2 > ~/.pomodoro_session
-    fi
+function pbar () {
+    MONITOR=$1 polybar $2
 }

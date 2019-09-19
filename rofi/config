@@ -1,9 +1,9 @@
 rofi.modi:  drun
 rofi.theme: ~/.cache/wal/colors-rofi-dark.rasi
 
-# BEGIN echidna
+# BEGIN lilith
 #rofi.font: DejaVuSansMono Nerd Font 11
-# END echidna
+# END lilith
 
 # BEGIN hestia
 #rofi.font: DejaVuSansMono Nerd Font 18
