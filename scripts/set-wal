@@ -15,7 +15,7 @@ if [ $3 ]; then
 fi
 
 if [[ $(polybar -m | wc -l) == 3 ]]; then
-    wallpaper_sequence="${2} ${2} ${3}"
+    wallpaper_sequence="${2} ${3} ${2}"
 else
     wallpaper_sequence="${2} ${3}"
 fi
