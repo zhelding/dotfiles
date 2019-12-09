@@ -17,6 +17,7 @@ bindsym $mod+Shift+q kill
 
 # Start rofi
 bindsym $mod+d exec --no-startup-id "rofi -show drun -modi drun,window"
+bindsym $mod+q exec --no-startup-id "rofi -show window -modi drun,window"
 
 # Change focus
 bindsym $mod+h focus left
