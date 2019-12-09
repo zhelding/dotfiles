@@ -9,12 +9,6 @@ set expandtab
 set tabstop=4
 set shiftwidth=4
 
-set timeoutlen=1000 ttimeoutlen=0
-
-set colorcolumn=81
-
-set clipboard=unnamedplus
-
 " Easier split navigation
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
@@ -25,44 +19,50 @@ nnoremap <C-H> <C-W><C-H>
 set splitbelow
 set splitright
 
+" Syntax folding, start unfolded
 set foldmethod=syntax
 set nofoldenable
 
-let NERDTreeShowLineNumbers=1
-autocmd FileType nerdtree setlocal number relativenumber
+" Miscellaneous general config
+syntax on
 
-let g:NERDTreeWinSize=24
+autocmd BufNewFile,BufRead *.hcl :setlocal filetype=terraform
 
-map <C-n> :NERDTreeToggle<CR>
+set timeoutlen=1000 ttimeoutlen=0
+set colorcolumn=81
+set clipboard=unnamedplus
 
-let g:taboo_tab_format = " %N %f "
-let g:taboo_renamed_tab_format = " %N %l "
-nnoremap T :TabooRename<space>
-
-let g:vimwiki_list = [{'path': '~/wiki/'}]
-nnoremap <Leader>we :VimwikiAll2HTML <CR>
-
-let g:airline_powerline_fonts = 1
-let g:airline_theme='dracula'
-
-let g:fzf_action = {
-    \ 'ctrl-t': 'tab split',
-    \ 'ctrl-x': 'split',
-    \ 'ctrl-v': 'vsplit'}
-
-let g:fzf_layout = { 'down': '~15%' }
-
-let g:fzf_buffers_jump = 1
-
-" fzf shortcuts
-nnoremap F :Files<CR>
-nnoremap B :Buffers<CR>
-nnoremap L :Lines<CR>
-
-let b:surround_{char2nr('r')} = "{{ \r }}"
+filetype plugin indent on
 
 runtime macros/matchit.vim
 
+" NERDTree config
+let g:NERDTreeShowLineNumbers=1
+let g:NERDTreeWinSize=24
+
+nnoremap <C-n> :NERDTreeToggle<CR>
+
+autocmd FileType nerdtree setlocal number relativenumber
+
+" Taboo config
+let g:taboo_tab_format = " %N %f "
+let g:taboo_renamed_tab_format = " %N %l "
+
+nnoremap <Leader>t :TabooRename<space>
+
+" Airline config
+let g:airline_powerline_fonts = 1
+let g:airline_theme='dracula'
+
+" fzf config
+let g:fzf_layout = { 'down': '~15%' }
+let g:fzf_buffers_jump = 1
+
+nnoremap <Leader>f :Files<CR>
+nnoremap <Leader>b :Buffers<CR>
+nnoremap <Leader>l :Lines<CR>
+
+" Word processor mode
 func! WordProcessorMode()
     setlocal noexpandtab
     map j gj
@@ -82,18 +82,13 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'gcmt/taboo.vim'
 Plugin 'w0rp/ale'
 Plugin 'christoomey/vim-tmux-navigator'
-Plugin 'vimwiki/vimwiki'
 Plugin 'dylanaraps/wal'
 Plugin 'tpope/vim-fugitive'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'junegunn/fzf.vim'
+Plugin 'dracula/vim', {'name': 'dracula'}
 
 call vundle#end()
-
-syntax on
-
-" File type based indentation
-filetype plugin indent on
 
 colorscheme wal
