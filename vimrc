@@ -27,6 +27,7 @@ set nofoldenable
 syntax on
 
 autocmd BufNewFile,BufRead *.hcl :setlocal filetype=terraform
+autocmd BufNewFile,BufRead *.tf :setlocal filetype=terraform
 
 set timeoutlen=1000 ttimeoutlen=0
 set colorcolumn=81
