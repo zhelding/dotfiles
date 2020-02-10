@@ -55,6 +55,13 @@ nnoremap <Leader>t :TabooRename<space>
 let g:airline_powerline_fonts = 1
 let g:airline_theme='dracula'
 
+let g:airline#extensions#default#layout = [
+  \ [ 'a', 'b', 'c' ],
+  \ [ 'x', 'z', 'error', 'warning' ]
+  \ ]
+
+let g:airline_section_z = '%3l/%L:%3v'
+
 " fzf config
 let g:fzf_layout = { 'down': '~15%' }
 let g:fzf_buffers_jump = 1
