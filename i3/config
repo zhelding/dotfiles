@@ -17,6 +17,7 @@ bindsym $mod+Shift+q kill
 
 # Start rofi
 bindsym $mod+d exec --no-startup-id "rofi -show drun -modi drun,window"
+bindsym $mod+q exec --no-startup-id "rofi -show window -modi drun,window"
 
 # Change focus
 bindsym $mod+h focus left
@@ -171,7 +172,7 @@ for_window [title="Authy"] floating enable
 # Load last used wallpaper and colorscheme
 set $wallpaper `cat $HOME/.cache/wal/wal`
 set $wallpaper-vert `cat $HOME/.cache/wal/wal-vert`
-exec --no-startup-id set-wal scale $wallpaper $wallpaper-vert $wallpaper
+exec --no-startup-id set-wal scale $wallpaper $wallpaper-vert
 
 # Start up compositor
 exec --no-startup-id compton -b

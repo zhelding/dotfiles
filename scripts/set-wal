@@ -14,16 +14,22 @@ if [ $3 ]; then
     echo `realpath $3` > /home/zhelding/.cache/wal/wal-vert
 fi
 
+if [[ $(polybar -m | wc -l) == 3 ]]; then
+    wallpaper_sequence="${2} ${3} ${2}"
+else
+    wallpaper_sequence="${2} ${3}"
+fi
+
 if [ $1 = "center" ]; then
-    feh --bg-center $2 $3 $2
+    feh --bg-center $wallpaper_sequence
 elif [ $1 = "fill" ]; then
-    feh --bg-fill $2 $3 $2
+    feh --bg-fill $wallpaper_sequence
 elif [ $1 = "max" ]; then
-    feh --bg-max $2 $3 $2
+    feh --bg-max $wallpaper_sequence
 elif [ $1 = "scale" ]; then
-    feh --bg-scale $2 $3 $2
+    feh --bg-scale $wallpaper_sequence
 elif [ $1 = "tile" ]; then
-    feh --bg-tile $2 $3 $2
+    feh --bg-tile $wallpaper_sequence
 else
     echo 'Error:' $1 'is not a valid feh background option'
     exit 1
