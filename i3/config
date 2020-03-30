@@ -142,6 +142,8 @@ bindsym $mod+r mode "resize"
 
 # Start up polybar
 
+exec --no-startup-id MONITOR=DP-2  polybar primary
+
 # BEGIN lilith
 #exec --no-startup-id MONITOR=DP-1 polybar primary
 #exec --no-startup-id MONITOR=DP-2 polybar secondary
@@ -223,7 +225,6 @@ bindsym $mod+Shift+x exec --no-startup-id lock
 #workspace 8 output DP-2
 #workspace 9 output DP-2
 #workspace X output DP-2
-#
 # END lilith
 
 # BEGIN vivian
