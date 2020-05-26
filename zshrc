@@ -17,8 +17,8 @@ SAVEHIST=1000
 autoload -Uz compinit
 compinit
 
-# Enable powerlevel9k theme
-source /usr/share/zsh-theme-powerlevel9k/powerlevel9k.zsh-theme
+# Enable powerlevel10k theme
+source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 
 POWERLEVEL9K_PROMPT_ON_NEWLINE=true
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(host vi_mode dir vcs)
