@@ -140,6 +140,9 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
+# turn on numlock
+exec --no-startup-id numlockx
+
 # Start up polybar
 
 # BEGIN lilith
