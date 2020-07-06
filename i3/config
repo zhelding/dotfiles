@@ -145,8 +145,6 @@ exec --no-startup-id numlockx
 
 # Start up polybar
 
-exec --no-startup-id MONITOR=DP-2  polybar primary
-
 # BEGIN lilith
 #exec --no-startup-id MONITOR=DP-1 polybar primary
 #exec --no-startup-id MONITOR=DP-2 polybar secondary
@@ -216,7 +214,7 @@ bindsym $mod+Shift+x exec --no-startup-id lock
 
 # Multimonitor setup
 # BEGIN lilith
-#exec --no-startup-id xrandr --output DVI-D-1 --off --output DP-2 --mode 1920x1080 --pos 1920x0 --rotate left --output DP-3 --off --output HDMI-1 --off --output DP-5 --primary --mode 1920x1080 --pos 0x256 --rotate normal
+#exec --no-startup-id xrandr --output DVI-D-0 --off --output HDMI-0 --off --output DP-0 --off --output DP-1 --mode 1920x1080 --pos 0x0 --rotate normal --output DP-2 --mode 1920x1080 --pos 1920x0 --rotate left --output DP-3 --off --output USB-C-0 --off
 #
 #workspace 1 output DP-1
 #workspace 2 output DP-1
